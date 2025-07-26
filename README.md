@@ -1,25 +1,25 @@
 📁 Portfolio Website
-    A modern, responsive personal portfolio website built using HTML and CSS. 
-    Designed to showcase my skills, projects, and contact information with a clean UI and smooth user experience.
+   <br> A modern, responsive personal portfolio website built using HTML and CSS. 
+    <br>Designed to showcase my skills, projects, and contact information with a clean UI and smooth user experience.<br>
 
-🔍 Features
-    💜 Purple gradient theme with elegant layout
-    💻 Project showcase section
-    👨‍💼 About Me & Skills section
-    📩 Contact section with social links and icons
-    📱 Fully responsive on all devices
-    📄 Resume download button
-    🎨 Smooth animations and hover effects
+🔍 Features<br>
+    💜 Purple gradient theme with elegant layout<br>
+    💻 Project showcase section<br>
+    👨‍💼 About Me & Skills section<br>
+    📩 Contact section with social links and icons<br>
+    📱 Fully responsive on all devices<br>
+    📄 Resume download button<br>
+    🎨 Smooth animations and hover effects<br>
 
-🚀 Tech Stack
+🚀 Tech Stack<br>
     HTML5
-    CSS3 (Flexbox, Grid, Animations)
+    <br>CSS3 (Flexbox, Grid, Gradients).
 
 📷 Preview
-(Replace with your screenshot or GitHub Pages link)
+    ![Screenshot of Portfolio](https://github.com/sameersethar/Portfolio-Webpage/blob/main/coverpage.jpg?raw=true)
 
 📌 Usage
-  To use or customize:
-    Clone the repository
-    Open index.html in your browser
-    Customize index.html, portfolio.css, and images as needed
+  <br>To use or customize:
+    <br>Clone the repository
+    <br>Open index.html in your browser
+    <br>Customize index.html, portfolio.css, and images as needed
