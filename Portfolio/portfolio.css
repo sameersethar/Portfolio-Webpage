@@ -1,0 +1,161 @@
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: linear-gradient(to top right, #2e1533, #2e1433, #ad39a8);
+  color: #333;
+}
+
+/* Header and nav */
+nav {
+  background: #9e2e9e71;
+  text-align: center;
+  padding: 1rem 0;  
+  width: 100vh;
+  margin: 0 auto;
+  border-radius: 100px;
+  box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
+}
+
+nav a {
+  color: white;
+  margin: 0 1rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Typography */
+h1 {
+  color: white;
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+/* Intro section and image side by side */
+
+.intro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+}
+
+.intro-header {
+  text-align: left;
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+#intro {
+  width: 50vh;
+  height: 60vh;
+  background: transparent;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+/* Profile image */
+.profile-pic {
+  width: 60vh;
+  height: 70vh;
+  box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
+  border-radius: 1000px;
+}
+
+/* Projects section */
+section {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+#about {
+  margin-top: 50px;
+  height: 100vh;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
+}
+
+#skills {
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+#projects {
+  margin-top: 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 10px;
+  color: #ffffff;
+}
+#contact_Header {
+  width: 200px;
+  text-align: center;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
+}
+
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+.project {
+  background: white;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: #333;
+}
+
+/* Contact section */
+.contact a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
