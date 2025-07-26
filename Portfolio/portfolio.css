@@ -33,21 +33,33 @@ body {
   font-weight: bold;
 }
 
+.self {
+  display: flex;
+  flex-wrap: wrap;          
+  align-items: center;
+  justify-content: space-between;
+  padding: 4rem 2rem;
+}
+
+.self-text{
+  max-width: 500px;
+}
+
+
 /* Typography */
-h1 {
-  color: white;
-  margin: 0;
-  font-size: 2.5rem;
+.self-text h1 {
+  font-size: 2.9rem;
+}
+ 
+/.self-text h2 {
+  margin: 10px 0;
+  font-size: 1.8rem;
+  color: rgb(253, 112, 234);
 }
 
-h2 {
-  color: white;
+.hero-text p {
+  margin: 1rem 0;
 }
-
-p {
-  color: white;
-}
-
 /* Intro section and image side by side */
 
 .intro-container {
@@ -83,10 +95,9 @@ p {
 
 /* Profile image */
 .profile-pic {
-  width: 60vh;
-  height: 70vh;
-  box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
-  border-radius: 1000px;
+  width: 300px;
+  border-radius: 50%;         
+  box-shadow: 0px 0px 10px 4px rgba(253, 112, 234, 0.8);
 }
 
 /* Projects section */
