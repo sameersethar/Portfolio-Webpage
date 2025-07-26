@@ -6,15 +6,15 @@ body {
   color: #333;
 }
 
-/* Header and nav */
-nav {
-  background: #9e2e9e71;
-  text-align: center;
-  padding: 1rem 0;  
-  width: 100vh;
-  margin: 0 auto;
-  border-radius: 100px;
-  box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
+/* Navigation bar container */
+.navbar {
+  background: rgba(0, 0, 0, 0.6);  
+  display: flex;                 /* Flexbox layout to align children */
+  justify-content: space-between; /* Puts logo on left and nav links on right */
+  align-items: center;          /* Vertically centers the content inside nav */
+  position: sticky;             /* Makes the navbar stick to top when scrolling */
+  top: 0;                       /* Stick to the very top */
+  z-index: 999;                 /* Keeps it on top of other content */
 }
 
 nav a {
