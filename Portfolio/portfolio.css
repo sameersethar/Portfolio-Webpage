@@ -24,6 +24,15 @@ body {
   gap: 2rem;
 }
 
+.nav-links a:hover {
+  color: #fd70ea;    
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
 /* Typography */
 h1 {
   color: white;
