@@ -3,7 +3,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: linear-gradient(to top right, #2e1533, #2e1433, #ad39a8);
-  color: #333;
+  color: white;
 }
 
 /* Navigation bar container */
@@ -114,19 +114,42 @@ section {
   box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
 }
 
-#skills {
-  margin-top: 100px;
-  border-radius: 10px;
-  box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
+.skills {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.skill-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 1rem;
   justify-content: center;
-  padding: 2rem;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 10px;
-  color: #ffffff;
+  gap: 1rem;
+  margin-top: 2rem;
 }
+
+/* each skill card */
+.card {
+  background: rgba(255,255,255,0.1);
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  min-width: 150px;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #fd70ea;
+  color: #000;
+}
+
+
+/* emogi looks */
+.card i {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+} 
 
 #projects {
   margin-top: 100px;
