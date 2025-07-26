@@ -1,101 +1,82 @@
-*{                    /*Apply to All*/
+/* ========== Global Reset ========== */
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-section {
-  padding: 4rem 2rem;
-}
-
-.btn,
-.btn-secondary {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  border: 2px solid #fd70ea;
-  color: #fd70ea;
-  background: transparent;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: 0.3s;
-}
-
-.btn:hover,
-.btn-secondary:hover {
-  background: #fd70ea;
-  color: #fff;
-}
 body {
-  font-family: 'Segoe UI', sans-serif; 
+  font-family: 'Segoe UI', sans-serif;
   background: linear-gradient(to top right, #2e1433, #ad39a8);
   color: white;
 }
 
-a {                         /*only links on navbar*/
-  text-decoration: none;  /* Removes underline from links */
-  color: inherit;     
-}
-/* Navigation bar container */
-.navbar {
-  background: rgba(0, 0, 0, 0.6);  
-  padding: 1rem 2rem;            /* Top-bottom: 1rem, Left-right: 2rem */
-  display: flex;                 /* Flexbox layout to align children */
-  justify-content: space-between; /* Puts logo on left and nav links on right */
-  align-items: center;          /*Vertically centers the content inside nav*/
-  position: sticky;             /*Makes the navbar stick to top when scrolling*/
-  top: 0;                       /* Stick to the very top */
-  z-index: 999;                 /* Keeps it on top of other content */
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
-/* Navigation links container */
-.nav-links {
-  margin-right: 2rem;             /* to make it little left from corner*/
-  list-style: none;               /* Remove bullet points */
-  display: flex;
-  gap: 2rem;                      /*Space b/w each link*/
-}
-
-.nav-links a:hover {
-  color: #fd70ea;    
-}
-
-/*Sameer text*/
-.logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  /*a little to right*/
-  margin-left: 1rem;
-}
-
-.self {
-  display: flex;
-  flex-wrap: wrap;               /* Allows wrapping on smaller screens */
-  align-items: center;
-  justify-content: space-between;
+/* ========== Global Layout ========== */
+section {
   padding: 4rem 2rem;
 }
 
+/* ========== Navigation Bar ========== */
+.navbar {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
 
-.self-text{
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+.nav-links {
+  margin-right: 2rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links a:hover {
+  color: #fd70ea;
+}
+
+/* ========== Hero / About Section ========== */
+.self {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.self-text {
   max-width: 500px;
 }
 
-
-/* Typography */
 .self-text h1 {
   font-size: 2.9rem;
 }
- 
+
 .self-text h2 {
-  margin: 5px 0;             /* Space above and below h2 */
+  margin: 5px 0;
   font-size: 2.9rem;
-  color: rgb(253, 112, 234);
+  color: #fd70ea;
 }
 
 .self-text p {
   margin: 1rem 0;
   font-size: 16px;
 }
+
 #Name {
   color: #fd70ea;
   text-shadow: 2px 4px 5px #000;
@@ -103,19 +84,14 @@ a {                         /*only links on navbar*/
   font-size: 2.8rem;
 }
 
-
-
-
-/* Profile image */
 .profile-pic {
   width: 300px;
-  border-radius: 50%;         
+  border-radius: 50%;
   box-shadow: 0px 0px 10px 4px rgba(253, 112, 234, 0.8);
 }
 
-
+/* ========== Skills Section ========== */
 .skills {
-  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -127,14 +103,14 @@ a {                         /*only links on navbar*/
   margin-top: 2rem;
 }
 
-/* each skill card */
 .card {
-  background: rgba(255,255,255,0.1);
+  background: rgba(255, 255, 255, 0.1);
   padding: 1rem 2rem;
   border-radius: 10px;
   font-size: 1.2rem;
   min-width: 150px;
   transition: transform 0.3s;
+  cursor: default;
 }
 
 .card:hover {
@@ -143,16 +119,14 @@ a {                         /*only links on navbar*/
   color: #000;
 }
 
-
-/* emogi looks */
 .card i {
   display: block;
   font-size: 2rem;
   margin-bottom: 0.5rem;
-} 
+}
 
+/* ========== Projects Section ========== */
 .projects {
-  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -173,14 +147,16 @@ a {                         /*only links on navbar*/
 }
 
 .project:hover {
-  transform: scale(1.03); /* slightly enlarges on hover */
+  transform: scale(1.03);
 }
-
-.project img {
+.project-video {
   width: 100%;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
+  box-shadow: 0 0 8px rgba(253, 112, 234, 0.4);
 }
+
 
 .project h3 {
   margin-bottom: 0.5rem;
@@ -192,29 +168,8 @@ a {                         /*only links on navbar*/
   margin-bottom: 1rem;
 }
 
-
-.project .btn,
-.project .btn-secondary {
-  display: inline-block;
-  margin-top: 0.5rem;
-  padding: 0.5rem 1rem;
-  border-radius: 6px;
-  border: 2px solid #fd70ea;
-  color: #fd70ea;
-  background: transparent;
-  transition: all 0.3s;
-  text-decoration: none;
-}
-
-.project .btn:hover,
-.project .btn-secondary:hover {
-  background: #fd70ea;
-  color: #fff;
-}
-
-
+/* ========== Certificates Section ========== */
 .certificates {
-  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -248,24 +203,27 @@ a {                         /*only links on navbar*/
   margin-bottom: 1rem;
 }
 
-.certificate-card .btn-secondary {
-  background: transparent;
-  border: 2px solid #fd70ea;
-  color: #fd70ea;
+/* ========== Shared Button Styles ========== */
+.btn,
+.btn-secondary {
+  display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  transition: 0.3s;
+  border: 2px solid #fd70ea;
+  color: #fd70ea;
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
-.certificate-card .btn-secondary:hover {
+.btn:hover,
+.btn-secondary:hover {
   background: #fd70ea;
   color: #fff;
 }
 
-
-/* Contact section */
+/* ========== Contact Section ========== */
 .contact {
-  padding: 4rem 2rem;
   text-align: center;
 }
 
@@ -277,28 +235,26 @@ a {                         /*only links on navbar*/
   gap: 1rem;
 }
 
-.contactform input{
-   padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
+.contactform input,
+.contactform textarea,
+.contactform button {
   font-size: 1rem;
-  background: #fff;
-  color: #333;
+  border-radius: 6px;
 }
+
+.contactform input,
 .contactform textarea {
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 1rem;
   background: #fff;
   color: #333;
 }
 
-.contactform input:focus{
-   border-color: #fd70ea;
-  outline: none;
-  box-shadow: 0 0 4px #fd70ea88;
+.contactform textarea {
+  resize: vertical;
 }
+
+.contactform input:focus,
 .contactform textarea:focus {
   border-color: #fd70ea;
   outline: none;
@@ -306,28 +262,27 @@ a {                         /*only links on navbar*/
 }
 
 .contactform button {
-  background: #fd70ea;   
+  background: #fd70ea;
   padding: 0.8rem;
   border: none;
   color: white;
-  font-size: 1rem;
-  border-radius: 20px;
-  cursor: pointer; 
+  cursor: pointer;
 }
 
 .contactform button:hover {
   background: #d456c6;
 }
 
+/* ========== Social Links ========== */
 .socialLinks {
   margin-top: 1rem;
-  display: flex;     
+  display: flex;
   justify-content: center;
-  gap: 2rem;  /*space b/w icons*/
-  font-size: 1.5rem; /*icon size*/
+  gap: 2rem;
+  font-size: 1.5rem;
 }
 
-/* Footer */
+/* ========== Footer ========== */
 footer {
   background: #111;
   text-align: center;

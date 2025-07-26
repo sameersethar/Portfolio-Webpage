@@ -44,43 +44,55 @@
 
   <section class="skills" id="skills">
       <h2>My Skills</h2>
-  <div class="skill-cards">
-    <!-- these are the emogies from fontAwesome-->
-    <div class="card"><i class="fab fa-html5"></i>HTML5</div>
-    <div class="card"><i class="fab fa-css3-alt"></i>CSS3</div>
-    <div class="card"><i class="fab fa-js"></i>JavaScript</div>
-    <div class="card"><i class="fab fa-react"></i>React</div>
-    <div class="card"><i class="fab fa-node-js"></i>Node.js</div>
-    <div class="card"><i class="fas fa-code-branch"></i>Git</div>
-  </div>
-  
+        <div class="skill-cards">
+        
+        <div class="card"><i class="fab fa-html5"></i> HTML5</div>
+        <div class="card"><i class="fab fa-css3-alt"></i> CSS3</div>
+        <div class="card"><i class="fab fa-js"></i> JavaScript</div>
+        <div class="card"><i class="fab fa-react"></i> React</div>
+        <div class="card"><i class="fab fa-node-js"></i> Node.js</div>
+        <div class="card"><i class="fas fa-code-branch"></i> Git</div>
+        <div class="card"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+      </div>
   </section>
 
   
   
   <section class="projects" id="project">
-    <h2>Projects</h2>
-    <div class="projects-grid">
-        <div class="project">
-          <!-- <img src="ecommerce.png" alt="E-Commerce Project"> -->
-          <h3>Mobile E-Commerce App (Java Swing)</h3>
-          <p>Java-based desktop app with GUI for purchasing mobiles.</p>
-          <div class="butoons">
-            <a href="#" class="btn">View Demo</a>
-            <a href="#" class="btn btn-secondary">GitHub</a>
-          </div>
-        </div>
-      <div class="project">
-        <!-- <img src="hotel.jpg" alt="Hotel Project"> -->
-        <h3>Hotel Management System (C++ CLI)</h3>
-        <p>Command-line hotel system for rooms, billing, and restaurant menu.</p>
-        <div class="buttons">
-          <a href="#" class="btn">View Demo</a>
-          <a href="#" class="btn btn-secondary">GitHub</a>
-        </div>
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Project 1: E-Commerce -->
+    <div class="project">
+      <video class="project-video" controls poster="ecommerce-thumbnail.png" muted>
+        <source src="projectVideo/eccommerce.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <h3>Mobile E-Commerce App (Java Swing)</h3>
+      <p>Java-based desktop app with GUI for purchasing mobiles.</p>
+      <div class="buttons">
+        <a href="projectVideo/eccommerce.mp4" class="btn" target="_blank">View Full Demo</a>
+        <a href="#" class="btn btn-secondary">GitHub</a> <!-- add link to github rep-->
       </div>
     </div>
-  </section>
+
+    <!-- Project 2: Hotel Management -->
+    <div class="project">
+      <video class="project-video" controls poster="hotel-thumbnail.png" muted>
+        <source src="projectVideo/hotel.mp4" type="video/mp4" >
+        Your browser does not support the video tag.
+      </video>
+      <h3>Hotel Management System (C++ CLI)</h3>
+      <p>Command-line hotel system for rooms, billing, and restaurant menu.</p>
+      <div class="buttons">
+        <a href="projectVideo/hotel.mp4" class="btn" target="_blank">View Full Demo</a>
+        <a href="#" class="btn btn-secondary">GitHub</a>  <!-- add link to github rep-->
+      </div>
+    </div>
+
+  </div>
+</section>
+
 
   <section class="certificates" id="certificates">
   <h2>Certificates</h2>
@@ -88,7 +100,7 @@
     <div class="certificate-card">
       <h3>Hackathon Participant</h3>
       <p>Participated in [Hackathon Name], built a project in 24 hours using web tech.</p>
-      <a href="your-hackathon-certificate.pdf" target="_blank" class="btn btn-secondary">View Certificate</a>
+      <a href="certificates/hacathon.jpeg" target="_blank" class="btn btn-secondary">View Certificate</a>
     </div>
 
     <div class="certificate-card">
