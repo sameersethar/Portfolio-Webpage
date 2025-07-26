@@ -1,41 +1,54 @@
-/* General styles */
+*{                    /*Apply to All*/
+  margin: 1;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  background: linear-gradient(to top right, #2e1533, #2e1433, #ad39a8);
+  font-family: 'Segoe UI', sans-serif; 
+  background: linear-gradient(to top right, #2e1433, #ad39a8);
   color: white;
 }
 
+a {                         /*only links on navbar*/
+  text-decoration: none;  /* Removes underline from links */
+  color: inherit;     
+}
 /* Navigation bar container */
 .navbar {
   background: rgba(0, 0, 0, 0.6);  
+  padding: 1rem 2rem;            /* Top-bottom: 1rem, Left-right: 2rem */
   display: flex;                 /* Flexbox layout to align children */
   justify-content: space-between; /* Puts logo on left and nav links on right */
-  align-items: center;          /* Vertically centers the content inside nav */
-  position: sticky;             /* Makes the navbar stick to top when scrolling */
+  align-items: center;          /*Vertically centers the content inside nav*/
+  position: sticky;             /*Makes the navbar stick to top when scrolling*/
   top: 0;                       /* Stick to the very top */
   z-index: 999;                 /* Keeps it on top of other content */
 }
 
 /* Navigation links container */
 .nav-links {
+  margin-right: 2rem;             /* to make it little left from corner*/
   list-style: none;               /* Remove bullet points */
   display: flex;
-  gap: 2rem;
+  gap: 2rem;                      /*Space b/w each link*/
 }
 
 .nav-links a:hover {
   color: #fd70ea;    
 }
 
+/*Sameer text*/
 .logo {
   font-size: 1.5rem;
   font-weight: bold;
+  /*a little to right*/
+  margin-left: 1rem;
 }
 
 .self {
   display: flex;
-  flex-wrap: wrap;          
+  flex-wrap: wrap;               /* Allows wrapping on smaller screens */
   align-items: center;
   justify-content: space-between;
   padding: 4rem 2rem;
@@ -51,8 +64,8 @@ body {
   font-size: 2.9rem;
 }
  
-/.self-text h2 {
-  margin: 10px 0;
+.self-text h2 {
+  margin: 10px 0;             /* Space above and below h2 */
   font-size: 1.8rem;
   color: rgb(253, 112, 234);
 }
@@ -60,38 +73,8 @@ body {
 .hero-text p {
   margin: 1rem 0;
 }
-/* Intro section and image side by side */
 
-.intro-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  padding: 2rem;
-  flex-wrap: wrap;
-}
 
-.intro-header {
-  text-align: left;
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
-}
-
-#intro {
-  width: 50vh;
-  height: 60vh;
-  background: transparent;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: #333;
-  background-color: rgba(255, 255, 255, 0.1);
-}
 
 /* Profile image */
 .profile-pic {
@@ -100,19 +83,6 @@ body {
   box-shadow: 0px 0px 10px 4px rgba(253, 112, 234, 0.8);
 }
 
-/* Projects section */
-section {
-  padding: 2rem;
-  max-width: 900px;
-  margin: auto;
-}
-
-#about {
-  margin-top: 50px;
-  height: 100vh;
-  border-radius: 10px;
-  box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
-}
 
 .skills {
   padding: 4rem 2rem;
@@ -152,13 +122,13 @@ section {
 } 
 
 #projects {
-  margin-top: 100px;
+   padding: 4rem 2rem;
+  text-align: center;
+  /* margin-top: 100px;
   border-radius: 10px;
   box-shadow: 0px 0px 4px 6px rgba(253, 112, 234, 0.801);
   background: rgba(255, 255, 255, 0.1);
-  padding: 2rem;
-  border-radius: 10px;
-  color: #ffffff;
+  color: #ffffff; */
 }
 #contact_Header {
   width: 200px;
@@ -169,36 +139,76 @@ section {
 }
 
 
+
 .projects {
+  padding: 4rem 2rem;
+  text-align: center;
+} 
+
+.projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
 }
 
 .project {
-  background: white;
+  background: rgba(255,255,255,0.1);
   padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  color: #333;
+  border-radius: 10px;
+}
+
+.buttons {
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
 }
 
 /* Contact section */
-.contact a {
-  color: #0077cc;
-  text-decoration: none;
+.contact {
+  padding: 4rem 2rem;
+  text-align: center;
 }
 
-.contact a:hover {
-  text-decoration: underline;
+
+.contactform {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
+.contactform input,
+.contactform textarea {
+  padding: 1rem;  
+  border: none;
+  border-radius: 5px;
+  resize: none;
+}
+.contactform button {
+  background: #fd70ea;
+  padding: 0.8rem;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.socialLinks {
+  margin-top: 1rem;
+  display: flex;      /*icons in row*/
+  justify-content: center;
+  gap: 2rem;  /*space b/w icons*/
+  font-size: 1.5rem; /*icon size*/
+}
 
 /* Footer */
 footer {
-  background: #333;
-  color: white;
+  background: #111;
   text-align: center;
-  padding: 1rem 0;
+  padding: 1rem;
   margin-top: 2rem;
 }
