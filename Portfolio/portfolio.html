@@ -6,6 +6,7 @@
   <title>Sameer's Portfolio</title>
   <link rel="stylesheet" href="portfolio.css" />
 </head>
+
 <body>
   <br>
 
@@ -23,21 +24,21 @@
 
 
   <!-- Intro and Profile Picture Side-by-Side --> 
-  <section id="about">
-    <div class="intro-header">
-      <h3>Hello!, I'm</h3>      
-      <h1>Sameer Sethar</h1>
-      <h3>Web Developer | Designer | Programmer</h3>
+  <section class="self" id="about">
+    <div class="self-text">
+        <h1>Hello, I'm 
+        <span class="highlight">Sameer Sethar</span>
+        </h1>
+        <h2>
+          <span id="typed"></span>
+        </h2>
+        <p>I'm a passionate web developer who brings creative ideas to life with code.
+        </p>
+      </div>
+      <div class="hero-img"></div>
+      <img src="sameer2.png" alt="Profile Picture" class="profile-pic" />  
     </div>
-    <div class="intro-container">
-    <div id="intro">
-      <p>
-        I'm a passionate web developer with a strong background in building responsive websites, applications, and user interfaces. I enjoy bringing ideas to life in the browser.
-      </p>
-    </div>
-    <img src="sameer2.png" alt="Profile Picture" class="profile-pic" />
-  </div>
- </section>
+  </section>
 
 
 
@@ -91,5 +92,10 @@
     <p>&copy; 2025 Sameer. All rights reserved.</p>
   </footer>
 
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> <!-- this link is must for Animation in text-->
+<script src="typedInit.js"></script>
 </body>
 </html>
