@@ -34,7 +34,7 @@ section {
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: bold;
   margin-left: 1rem;
 }
@@ -44,37 +44,40 @@ section {
   list-style: none;
   display: flex;
   gap: 2rem;
+  font-size: 1.2rem;
 }
 
 .nav-links a:hover {
   color: #fd70ea;
 }
 
-/* ========== Hero / About Section ========== */
+/* ========== Self / About Section ========== */
 .self {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: left;
   justify-content: space-between;
 }
 
 .self-text {
   max-width: 500px;
+  text-align: left;
 }
 
 .self-text h1 {
-  font-size: 2.9rem;
+  font-size: 2.6rem;
 }
 
 .self-text h2 {
   margin: 5px 0;
-  font-size: 2.9rem;
+  font-size: 3rem;
   color: #fd70ea;
+  text-shadow: 2px 3px 2px;
 }
 
 .self-text p {
-  margin: 1rem 0;
-  font-size: 16px;
+  margin: 3rem 0;
+  font-size: 20px;
 }
 
 #Name {
@@ -85,7 +88,7 @@ section {
 }
 
 .profile-pic {
-  width: 300px;
+  width: 400px;
   border-radius: 50%;
   box-shadow: 0px 0px 10px 4px rgba(253, 112, 234, 0.8);
 }
@@ -93,9 +96,11 @@ section {
 /* ========== Skills Section ========== */
 .skills {
   text-align: center;
+  font-size: 25px;
+  font-family: 'sans-serif';
 }
 
-.skill-cards {
+.skillSection {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -128,6 +133,9 @@ section {
 /* ========== Projects Section ========== */
 .projects {
   text-align: center;
+
+  font-size: 25px;
+  font-family: 'sans-serif';
 }
 
 .projects-grid {
@@ -150,7 +158,7 @@ section {
   transform: scale(1.03);
 }
 .project-video {
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -164,13 +172,15 @@ section {
 }
 
 .project p {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
 
 /* ========== Certificates Section ========== */
 .certificates {
   text-align: center;
+  font-size: 25px;
+  font-family: 'sans-serif';
 }
 
 .certificate-list {
@@ -199,9 +209,22 @@ section {
 }
 
 .certificate-card p {
-  font-size: 0.95rem;
+  font-size: 1.2rem;
   margin-bottom: 1rem;
 }
+
+.certificate-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px rgba(253, 112, 234, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.certificate-img:hover {
+  transform: scale(1.03);
+}
+
 
 /* ========== Shared Button Styles ========== */
 .btn,
@@ -225,6 +248,13 @@ section {
 /* ========== Contact Section ========== */
 .contact {
   text-align: center;
+  font-size: 25px;
+  font-family: 'sans-serif';
+  margin-top: 100px;
+}
+
+.contact h2 {
+  margin-bottom: 2rem; 
 }
 
 .contactform {
