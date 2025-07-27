@@ -1,0 +1,313 @@
+/* ========== Global Reset ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* Changed: Dark gradient background for neon effect */
+  color: #f5f5f5; /* Changed: Light text color for contrast */
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+.navbar {
+  background: rgba(0, 0, 0, 0.6); /* Changed: Semi-transparent black for sleek navbar */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.logo {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-left: 1rem;
+  color: #00fff7; /* Changed: Neon blue logo text */
+}
+
+.nav-links {
+  margin-right: 2rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  font-size: 1.2rem;
+}
+
+.nav-links a:hover {
+  color: #ff00cc; /* Changed: Neon pink hover effect */
+}
+
+.self {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: space-between;
+}
+
+.self-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.self-text h1 {
+  font-size: 2.6rem;
+}
+
+.self-text h2 {
+  margin: 5px 0;
+  font-size: 3rem;
+  color: #ff00cc; /* Changed: Neon pink secondary heading */
+  text-shadow: 2px 3px 2px;
+}
+
+.self-text p {
+  margin: 3rem 0;
+  font-size: 20px;
+}
+
+#Name {
+  color: #00fff7; /* Changed: Highlighted name in neon blue */
+  text-shadow: 2px 4px 5px #000;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+
+.profile-pic {
+  width: 400px;
+  border-radius: 50%;
+  box-shadow: 0px 0px 15px 6px #ff00cc; /* Changed: Neon glow around profile picture */
+}
+
+.skills {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'sans-serif';
+}
+
+.skillSection {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.05); /* Changed: Transparent background for glow */
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  min-width: 150px;
+  transition: transform 0.3s;
+  cursor: default;
+  color: #fff;
+  border: 1px solid #ff00cc33; /* Changed: Subtle neon pink border */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  background: #ff00cc; /* Changed: Hover color neon pink */
+  color: #000;
+}
+
+.card i {
+  display: block;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.projects {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'sans-serif';
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.project {
+  background: rgba(255, 255, 255, 0.05); /* Changed: Transparent background for neon pop */
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #f5f5f5;
+  box-shadow: 0px 0px 10px #ff00cc; /* Changed: Neon pink glow */
+  transition: transform 0.3s;
+}
+
+.project:hover {
+  transform: scale(1.03);
+}
+
+.project-video {
+  width: 80%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px #00fff7; /* Changed: Neon blue glow on video */
+}
+
+.project h3 {
+  margin-bottom: 0.5rem;
+  color: #00fff7; /* Changed: Neon blue project title */
+}
+
+.project p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.certificates {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'sans-serif';
+}
+
+.certificate-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.certificate-card {
+  background: rgba(255, 255, 255, 0.05); /* Changed: Transparent background for glow */
+  padding: 1.5rem;
+  border-radius: 10px;
+  color: #f5f5f5;
+  box-shadow: 0px 0px 6px #ff00cc; /* Changed: Neon pink border glow */
+  transition: transform 0.3s;
+}
+
+.certificate-card:hover {
+  transform: scale(1.03);
+}
+
+.certificate-card h3 {
+  margin-bottom: 0.5rem;
+  color: #00fff7; /* Changed: Neon blue text */
+}
+
+.certificate-card p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.certificate-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 8px #00fff7; /* Changed: Neon glow on images */
+  transition: transform 0.3s ease;
+}
+
+.certificate-img:hover {
+  transform: scale(1.03);
+}
+
+.btn,
+.btn-secondary {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 2px solid #ff00cc; /* Changed: Neon pink border */
+  color: #ff00cc;
+  background: transparent;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.btn:hover,
+.btn-secondary:hover {
+  background: #ff00cc; /* Changed: Neon pink hover background */
+  color: #fff;
+}
+
+.contact {
+  text-align: center;
+  font-size: 25px;
+  font-family: 'sans-serif';
+  margin-top: 100px;
+}
+
+.contact h2 {
+  margin-bottom: 2rem;
+}
+
+.contactform {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.contactform input,
+.contactform textarea,
+.contactform button {
+  font-size: 1rem;
+  border-radius: 6px;
+}
+
+.contactform input,
+.contactform textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  background: #fff;
+  color: #333;
+}
+
+.contactform textarea {
+  resize: vertical;
+}
+
+.contactform input:focus,
+.contactform textarea:focus {
+  border-color: #ff00cc; /* Changed: Focus color neon pink */
+  outline: none;
+  box-shadow: 0 0 4px rgba(255, 0, 204, 0.5);
+}
+
+.contactform button {
+  background: #ff00cc; /* Changed: Neon pink button */
+  padding: 0.8rem;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.contactform button:hover {
+  background: #c80099; /* Changed: Darker hover pink */
+}
+
+.socialLinks {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  font-size: 1.5rem;
+}
+
+footer {
+  background: #1a1a2e; /* Changed: Dark footer background */
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: #fff;
+}
