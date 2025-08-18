@@ -7,8 +7,8 @@
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e); /* Changed: Dark gradient background for neon effect */
-  color: #f5f5f5; /* Changed: Light text color for contrast */
+  background: linear-gradient(to top right, #2e1433, #ad39a8);
+  color: white;
 }
 
 a {
@@ -16,12 +16,14 @@ a {
   color: inherit;
 }
 
+/* ========== Global Layout ========== */
 section {
   padding: 4rem 2rem;
 }
 
+/* ========== Navigation Bar ========== */
 .navbar {
-  background: rgba(0, 0, 0, 0.6); /* Changed: Semi-transparent black for sleek navbar */
+  background: rgba(0, 0, 0, 0.6);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -35,7 +37,6 @@ section {
   font-size: 3rem;
   font-weight: bold;
   margin-left: 1rem;
-  color: #00fff7; /* Changed: Neon blue logo text */
 }
 
 .nav-links {
@@ -47,9 +48,10 @@ section {
 }
 
 .nav-links a:hover {
-  color: #ff00cc; /* Changed: Neon pink hover effect */
+  color: #fd70ea;
 }
 
+/* ========== Self / About Section ========== */
 .self {
   display: flex;
   flex-wrap: wrap;
@@ -69,7 +71,7 @@ section {
 .self-text h2 {
   margin: 5px 0;
   font-size: 3rem;
-  color: #ff00cc; /* Changed: Neon pink secondary heading */
+  color: #fd70ea;
   text-shadow: 2px 3px 2px;
 }
 
@@ -79,7 +81,7 @@ section {
 }
 
 #Name {
-  color: #00fff7; /* Changed: Highlighted name in neon blue */
+  color: #fd70ea;
   text-shadow: 2px 4px 5px #000;
   font-weight: 700;
   font-size: 2.8rem;
@@ -88,9 +90,10 @@ section {
 .profile-pic {
   width: 400px;
   border-radius: 50%;
-  box-shadow: 0px 0px 15px 6px #ff00cc; /* Changed: Neon glow around profile picture */
+  box-shadow: 0px 0px 10px 4px rgba(253, 112, 234, 0.8);
 }
 
+/* ========== Skills Section ========== */
 .skills {
   text-align: center;
   font-size: 25px;
@@ -106,20 +109,18 @@ section {
 }
 
 .card {
-  background: rgba(255, 255, 255, 0.05); /* Changed: Transparent background for glow */
+  background: rgba(255, 255, 255, 0.1);
   padding: 1rem 2rem;
   border-radius: 10px;
   font-size: 1.2rem;
   min-width: 150px;
   transition: transform 0.3s;
   cursor: default;
-  color: #fff;
-  border: 1px solid #ff00cc33; /* Changed: Subtle neon pink border */
 }
 
 .card:hover {
   transform: scale(1.05);
-  background: #ff00cc; /* Changed: Hover color neon pink */
+  background: #fd70ea;
   color: #000;
 }
 
@@ -129,8 +130,10 @@ section {
   margin-bottom: 0.5rem;
 }
 
+/* ========== Projects Section ========== */
 .projects {
   text-align: center;
+
   font-size: 25px;
   font-family: 'sans-serif';
 }
@@ -143,29 +146,29 @@ section {
 }
 
 .project {
-  background: rgba(255, 255, 255, 0.05); /* Changed: Transparent background for neon pop */
+  background: rgba(255, 255, 255, 0.1);
   padding: 1.5rem;
   border-radius: 10px;
-  color: #f5f5f5;
-  box-shadow: 0px 0px 10px #ff00cc; /* Changed: Neon pink glow */
+  color: white;
+  box-shadow: 0px 0px 6px rgba(253, 112, 234, 0.5);
   transition: transform 0.3s;
 }
 
 .project:hover {
   transform: scale(1.03);
 }
-
 .project-video {
   width: 80%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
-  box-shadow: 0 0 8px #00fff7; /* Changed: Neon blue glow on video */
+  box-shadow: 0 0 8px rgba(253, 112, 234, 0.4);
 }
+
 
 .project h3 {
   margin-bottom: 0.5rem;
-  color: #00fff7; /* Changed: Neon blue project title */
+  color: #fd70ea;
 }
 
 .project p {
@@ -173,6 +176,7 @@ section {
   margin-bottom: 1rem;
 }
 
+/* ========== Certificates Section ========== */
 .certificates {
   text-align: center;
   font-size: 25px;
@@ -187,11 +191,11 @@ section {
 }
 
 .certificate-card {
-  background: rgba(255, 255, 255, 0.05); /* Changed: Transparent background for glow */
+  background: rgba(255, 255, 255, 0.1);
   padding: 1.5rem;
   border-radius: 10px;
-  color: #f5f5f5;
-  box-shadow: 0px 0px 6px #ff00cc; /* Changed: Neon pink border glow */
+  color: white;
+  box-shadow: 0px 0px 6px rgba(253, 112, 234, 0.5);
   transition: transform 0.3s;
 }
 
@@ -201,7 +205,7 @@ section {
 
 .certificate-card h3 {
   margin-bottom: 0.5rem;
-  color: #00fff7; /* Changed: Neon blue text */
+  color: #fd70ea;
 }
 
 .certificate-card p {
@@ -213,7 +217,7 @@ section {
   width: 100%;
   border-radius: 10px;
   margin-bottom: 1rem;
-  box-shadow: 0 0 8px #00fff7; /* Changed: Neon glow on images */
+  box-shadow: 0 0 8px rgba(253, 112, 234, 0.4);
   transition: transform 0.3s ease;
 }
 
@@ -221,13 +225,15 @@ section {
   transform: scale(1.03);
 }
 
+
+/* ========== Shared Button Styles ========== */
 .btn,
 .btn-secondary {
   display: inline-block;
   padding: 0.5rem 1rem;
   border-radius: 6px;
-  border: 2px solid #ff00cc; /* Changed: Neon pink border */
-  color: #ff00cc;
+  border: 2px solid #fd70ea;
+  color: #fd70ea;
   background: transparent;
   text-decoration: none;
   transition: all 0.3s;
@@ -235,10 +241,11 @@ section {
 
 .btn:hover,
 .btn-secondary:hover {
-  background: #ff00cc; /* Changed: Neon pink hover background */
+  background: #fd70ea;
   color: #fff;
 }
 
+/* ========== Contact Section ========== */
 .contact {
   text-align: center;
   font-size: 25px;
@@ -247,7 +254,7 @@ section {
 }
 
 .contact h2 {
-  margin-bottom: 2rem;
+  margin-bottom: 2rem; 
 }
 
 .contactform {
@@ -279,13 +286,13 @@ section {
 
 .contactform input:focus,
 .contactform textarea:focus {
-  border-color: #ff00cc; /* Changed: Focus color neon pink */
+  border-color: #fd70ea;
   outline: none;
-  box-shadow: 0 0 4px rgba(255, 0, 204, 0.5);
+  box-shadow: 0 0 4px #fd70ea88;
 }
 
 .contactform button {
-  background: #ff00cc; /* Changed: Neon pink button */
+  background: #fd70ea;
   padding: 0.8rem;
   border: none;
   color: white;
@@ -293,9 +300,10 @@ section {
 }
 
 .contactform button:hover {
-  background: #c80099; /* Changed: Darker hover pink */
+  background: #d456c6;
 }
 
+/* ========== Social Links ========== */
 .socialLinks {
   margin-top: 1rem;
   display: flex;
@@ -304,10 +312,10 @@ section {
   font-size: 1.5rem;
 }
 
+/* ========== Footer ========== */
 footer {
-  background: #1a1a2e; /* Changed: Dark footer background */
+  background: #111;
   text-align: center;
   padding: 1rem;
   margin-top: 2rem;
-  color: #fff;
 }
