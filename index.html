@@ -2,149 +2,146 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <!-- MOBILE: keep page width equal to device width -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sameer's Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> <!-- for Skills emogi-->
- 
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Styles -->
   <link rel="stylesheet" href="portfolio.css" />
 </head>
 
 <body>
-  <br>
+  <!-- NAV -->
+  <nav class="navbar">
+    <div class="logo">Sameer</div>
 
-        <nav class="navbar">
-              <div class="logo">Sameer Sethar</div>
-              <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certificates">Certificates</a></li>
-                <li><a href="#contact">Contact</a></li>
-              </ul>
-        </nav>
+    <!-- MOBILE: hamburger button -->
+    <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="primary-nav">
+      <i class="fas fa-bars"></i>
+    </button>
 
+    <ul id="primary-nav" class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li> <!-- FIX: matches section id -->
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#certificates">Certificates</a></li>
+    </ul>
+  </nav>
 
-      <!-- Intro and Profile Picture Side-by-Side --> 
-      <section class="self" id="about">
-            <div class="self-text">
-              <h1>Hello, I'm <span id="Name">Sameer Sethar</span></h1>
-              <h2><span id="typed"></span></h2>
-              <p>I'm a passionate web developer with a strong background in building responsive websites, 
-                applications, and user interfaces. I enjoy bringing ideas to life in the browser.</p>
-            </div>
+  <!-- About -->
+  <section class="self container" id="about">
+    <div class="self-text">
+      <h1>Hello, I'm <span id="Name">Sameer Sethar</span></h1>
+      <h2><span id="typed"></span></h2>
+      <p>I'm a passionate web developer with a strong background in building responsive websites,
+        applications, and user interfaces. I enjoy bringing ideas to life in the browser.</p>
+    </div>
 
-            <div class="self-img">
-              <img src="sameer2.png" alt="Profile Picture" class="profile-pic" />
-            </div>
-      </section>
+    <div class="self-img">
+      <!-- MOBILE: responsive image sizing -->
+      <img src="sameer2.png" alt="Profile Picture" class="profile-pic" />
+    </div>
+  </section>
 
+  <!-- Skills -->
+  <section class="skills container" id="skills">
+    <h2>My Skills</h2>
+    <div class="skillSection">
+      <div class="card"><i class="fab fa-html5"></i> HTML5</div>
+      <div class="card"><i class="fab fa-css3-alt"></i> CSS3</div>
+      <div class="card"><i class="fab fa-js"></i> JavaScript</div>
+      <div class="card"><i class="fab fa-react"></i> React</div>
+      <div class="card"><i class="fab fa-node-js"></i> Node.js</div>
+      <div class="card"><i class="fas fa-code-branch"></i> Git</div>
+      <div class="card"><i class="fas fa-lightbulb"></i> Problem Solving</div>
+    </div>
+  </section>
 
-
-
-      <section class="skills" id="skills">
-          <h2>My Skills</h2>
-            <div class="skillSection">
-              <!-- These are from fontAwesome emoje code-->
-            <div class="card"><i class="fab fa-html5"></i> HTML5</div>
-            <div class="card"><i class="fab fa-css3-alt"></i> CSS3</div>
-            <div class="card"><i class="fab fa-js"></i> JavaScript</div>
-            <div class="card"><i class="fab fa-react"></i> React</div>
-            <div class="card"><i class="fab fa-node-js"></i> Node.js</div>
-            <div class="card"><i class="fas fa-code-branch"></i> Git</div>
-            <div class="card"><i class="fas fa-lightbulb"></i> Problem Solving</div>
-          </div>
-      </section>
-
-      
-      
-    <section class="projects" id="projects">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-          <div class="project">
-                <video class="project-video" controls poster="ecommerce-thumbnail.png" muted autoplay>
-                  <source src="projectVideo/eccommerce.mp4" type="video/mp4">
-                  Your browser does not support the video tag.
-                </video>
-                <h3>Mobile E-Commerce App (Java Swing)</h3>
-                <p>Java-based desktop app with GUI for purchasing mobiles.</p>
-                <div class="buttons">
-                  <a href="projectVideo/eccommerce.mp4" class="btn" target="_blank">View Full Demo</a>
-                  <a href="#" class="btn btn-secondary">GitHub</a> <!-- add link to github rep-->
-                </div>
-          </div>
-
-          <div class="project">
-                <video class="project-video" controls poster="hotel-thumbnail.png" muted autoplay>
-                  <source src="projectVideo/hotel.mp4" type="video/mp4" >
-                  Your browser does not support the video tag.
-                </video>
-                <h3>Hotel Management System (C++ CLI)</h3>
-                <p>Command-line hotel system for rooms, billing, and restaurant menu.</p>
-                <div class="buttons">
-                  <a href="projectVideo/hotel.mp4" class="btn" target="_blank">View Full Demo</a>
-                  <a href="#" class="btn btn-secondary">GitHub</a>  <!-- add link to github rep-->
-                </div>
-          </div>
-
-      </div>
-    </section>
-
-
-          <section class="certificates" id="certificates">
-              <h2>Certificates</h2>
-              <div class="certificate-list">
-
-                <div class="certificate-card">
-                  <h3>Hackathon Participant</h3>
-                  <img src="certificates/hacathon.jpeg" alt="Hackathon Certificate" class="certificate-img">
-                  <p>Participated in Hackathon, built a project in 24 hours using Swing GUI.</p>
-                </div>
-
-                <div class="certificate-card">
-                  <h3>Expo Submission</h3>
-                  <img src="certificates/expo.jpg" alt="Expo Certificate" class="certificate-img">
-                  <p>Presented a functional tech project at the university expo showcasing real-world problem solving.</p>
-                </div>
-
-                <div class="certificate-card">
-                  <h3>SIBAFest Participation</h3>
-                  <img src="certificates/sibafest.jpg" alt="SIBAFest Certificate" class="certificate-img">
-                  <p>Participated in SIBAFest, a university event celebrating innovation and development.</p>
-                </div>
-
+  <!-- Projects -->
+  <section class="projects container" id="projects"> <!-- FIX: id 'projects' -->
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project">
+        <!-- MOBILE: playsinline prevents forced fullscreen on phones -->
+        <video class="project-video" controls poster="ecommerce-thumbnail.png" muted autoplay playsinline loop>
+          <source src="projectVideo/eccommerce.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Mobile E-Commerce App (Java Swing)</h3>
+        <p>Java-based desktop app with GUI for purchasing mobiles.</p>
+        <div class="buttons">
+          <a href="projectVideo/eccommerce.mp4" class="btn" target="_blank" rel="noopener">View Full Demo</a>
+          <a href="#" class="btn btn-secondary">GitHub</a>
         </div>
-      </section>
+      </div>
 
+      <div class="project">
+        <video class="project-video" controls poster="hotel-thumbnail.png" muted autoplay playsinline loop>
+          <source src="projectVideo/hotel.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <h3>Hotel Management System (C++ CLI)</h3>
+        <p>Command-line hotel system for rooms, billing, and restaurant menu.</p>
+        <div class="buttons">
+          <a href="projectVideo/hotel.mp4" class="btn" target="_blank" rel="noopener">View Full Demo</a>
+          <a href="#" class="btn btn-secondary">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Certificates -->
+  <section class="certificates container" id="certificates">
+    <h2>Certificates</h2>
+    <div class="certificate-list">
+      <div class="certificate-card">
+        <h3>Hackathon Participant</h3>
+        <img src="certificates/hacathon.jpeg" alt="Hackathon Certificate" class="certificate-img">
+        <p>Participated in Hackathon, built a project in 24 hours using Swing GUI.</p>
+      </div>
 
-      
-      
-      
-      <section class="contact" id="contact">
-          <h2>Contact Me</h2>
-          <form class="contactform">
-            <input type="text" placeholder="Name" required> <!--Required must put info to Submit-->
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Your Message" required></textarea>
-            <button type="submit">Send</button>
-          </form>
+      <div class="certificate-card">
+        <h3>Expo Submission</h3>
+        <img src="certificates/expo.jpg" alt="Expo Certificate" class="certificate-img">
+        <p>Presented a functional tech project at the university expo showcasing real-world problem solving.</p>
+      </div>
 
-          <div class="socialLinks">
-            <a href="mailto:sameersethar907@gmail.com"  target="_blank"><i class="fas fa-envelope"></i></a>
-            <a href="https://linkedin.com/in/sameer-sethar" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/sameersethar" target="_blank"><i class="fab fa-github"></i></a>
-          </div>
-      </section>
+      <div class="certificate-card">
+        <h3>SIBAFest Participation</h3>
+        <img src="certificates/sibafest.jpg" alt="SIBAFest Certificate" class="certificate-img">
+        <p>Participated in SIBAFest, a university event celebrating innovation and development.</p>
+      </div>
+    </div>
+  </section>
 
+  <!-- Contact -->
+  <section class="contact container" id="contact">
+    <h2>Contact Me</h2>
+    <form class="contactform">
+      <input type="text" placeholder="Name" required>
+      <input type="email" placeholder="Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
 
-        <footer>
-          <p>&copy; 2025 Sameer. All rights reserved.</p>
-        </footer>
+    <div class="socialLinks">
+      <a href="mailto:sameersethar907@gmail.com" target="_blank" rel="noopener"><i class="fas fa-envelope"></i></a>
+      <a href="https://linkedin.com/in/sameer-sethar" target="_blank" rel="noopener"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/sameersethar" target="_blank" rel="noopener"><i class="fab fa-github"></i></a>
+    </div>
+  </section>
 
+  <footer>
+    <p>&copy; 2025 Sameer. All rights reserved.</p>
+  </footer>
 
-
-    <!-- this link is must for Animation in text-->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script> 
-    <script src="typedInit.js"></script>
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <!-- INIT (also toggles mobile menu) -->
+  <script src="typedInit.js"></script>
 </body>
 </html>
