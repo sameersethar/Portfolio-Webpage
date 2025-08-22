@@ -1,20 +1,19 @@
 /* ========== Global Reset ========== */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
-html { scroll-behavior: smooth; } /* nicer anchor jumps */
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Segoe UI', sans-serif;
-  /* keep your brand gradient */
   background: linear-gradient(to top right, #2e1433, #ad39a8);
   color: white;
 }
 
-/* CONTAINER: center content and add safe side padding */
+/* CONTAINER */
 .container {
   max-width: 1100px;
   margin-inline: auto;
-  padding-inline: 1rem; /* MOBILE: prevent edge clipping */
+  padding-inline: 1rem;
 }
 
 a { text-decoration: none; color: inherit; }
@@ -28,11 +27,11 @@ section { padding: 4rem 2rem; }
   justify-content: space-between;
   align-items: center;
   position: sticky; top: 0; z-index: 999;
-  backdrop-filter: blur(6px); /* subtle glass on scroll */
+  backdrop-filter: blur(6px);
 }
 
 .logo {
-  font-size: 2rem; /* MOBILE: smaller than 3rem to avoid overflow */
+  font-size: 2rem;
   font-weight: 800;
   letter-spacing: 0.5px;
 }
@@ -55,20 +54,19 @@ section { padding: 4rem 2rem; }
   border-radius: .5rem;
 }
 
-/* link hover */
 .nav-links a:hover { color: #fd70ea; }
 
 /* ========== Self / About Section ========== */
 .self {
   display: flex;
   flex-wrap: wrap;
-  align-items: center; /* FIX: 'left' is invalid; use center/start */
+  align-items: center;          /* fix invalid 'left' */
   justify-content: space-between;
-  gap: 2rem; /* spacing between text and image */
+  gap: 2rem;
 }
 
 .self-text {
-  flex: 1 1 320px; /* MOBILE: allow shrinking */
+  flex: 1 1 320px;
   max-width: 560px;
   text-align: left;
 }
@@ -89,14 +87,10 @@ section { padding: 4rem 2rem; }
   font-size: clamp(1.8rem, 1.2rem + 2vw, 2.2rem);
 }
 
-.self-img {
-  flex: 1 1 260px;
-  display: flex; justify-content: center;
-}
+.self-img { flex: 1 1 260px; display: flex; justify-content: center; }
 
 .profile-pic {
-  /* FIX: avoid fixed 400px width on phones */
-  width: min(320px, 80vw);
+  width: min(320px, 80vw);   /* responsive image */
   height: auto;
   border-radius: 50%;
   box-shadow: 0 0 10px 4px rgba(253, 112, 234, 0.8);
@@ -111,7 +105,7 @@ section { padding: 4rem 2rem; }
   background: rgba(255, 255, 255, 0.1);
   padding: 1rem 1.25rem;
   border-radius: 10px;
-  font-size: 1rem;        /* MOBILE: slightly smaller */
+  font-size: 1rem;
   min-width: 140px;
   transition: transform 0.3s, background 0.3s, color 0.3s;
   cursor: default;
@@ -123,7 +117,7 @@ section { padding: 4rem 2rem; }
 .projects { text-align: center; font-size: 25px; }
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* a bit narrower for phones */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem; margin-top: 2rem;
 }
 .project {
@@ -136,7 +130,7 @@ section { padding: 4rem 2rem; }
 }
 .project:hover { transform: scale(1.02); }
 .project-video {
-  width: 100%;   /* FIX: 80% caused empty edges on mobile */
+  width: 100%;
   height: auto;
   border-radius: 10px;
   margin-bottom: 1rem;
@@ -174,7 +168,7 @@ section { padding: 4rem 2rem; }
   border-radius: 10px; border: 2px solid #fd70ea;
   color: #fd70ea; background: transparent; text-decoration: none;
   transition: all 0.3s;
-  min-height: 44px; /* MOBILE: touch target */
+  min-height: 44px;
 }
 .btn:hover, .btn-secondary:hover { background: #fd70ea; color: #fff; }
 
@@ -204,13 +198,10 @@ section { padding: 4rem 2rem; }
 footer { background: #111; text-align: center; padding: 1rem; margin-top: 2rem; }
 
 /* ========== Mobile & Tablet Tweaks ========== */
-@media (max-width: 1024px) {
-  .logo { font-size: 1.8rem; }
-}
+@media (max-width: 1024px) { .logo { font-size: 1.8rem; } }
 
 /* phones */
 @media (max-width: 768px) {
-  /* show hamburger, hide desktop nav */
   .menu-toggle { display: inline-flex; align-items: center; justify-content: center; }
   .nav-links {
     position: absolute;
@@ -219,12 +210,12 @@ footer { background: #111; text-align: center; padding: 1rem; margin-top: 2rem; 
     border: 1px solid #ffffff22;
     border-radius: 12px;
     padding: .75rem;
-    display: none;           /* hidden by default */
-    flex-direction: column;  /* dropdown */
+    display: none;
+    flex-direction: column;
     gap: .75rem;
     min-width: 200px;
   }
-  .nav-links.open { display: flex; } /* toggled via JS */
+  .nav-links.open { display: flex; }
 
   section { padding: 3rem 1rem; }
   .self { justify-content: center; text-align: center; }

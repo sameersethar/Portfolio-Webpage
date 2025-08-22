@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <!-- MOBILE: keep page width equal to device width -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Sameer's Portfolio</title>
 
@@ -26,7 +25,7 @@
     <ul id="primary-nav" class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#skills">Skills</a></li>
-      <li><a href="#projects">Projects</a></li> <!-- FIX: matches section id -->
+      <li><a href="#projects">Projects</a></li>
       <li><a href="#contact">Contact</a></li>
       <li><a href="#certificates">Certificates</a></li>
     </ul>
@@ -37,12 +36,11 @@
     <div class="self-text">
       <h1>Hello, I'm <span id="Name">Sameer Sethar</span></h1>
       <h2><span id="typed"></span></h2>
-      <p>I'm a passionate web developer with a strong background in building responsive websites,
+      <p>I'm a passionate web developer with a strong background in building responsive websites, 
         applications, and user interfaces. I enjoy bringing ideas to life in the browser.</p>
     </div>
 
     <div class="self-img">
-      <!-- MOBILE: responsive image sizing -->
       <img src="sameer2.png" alt="Profile Picture" class="profile-pic" />
     </div>
   </section>
@@ -62,11 +60,10 @@
   </section>
 
   <!-- Projects -->
-  <section class="projects container" id="projects"> <!-- FIX: id 'projects' -->
+  <section class="projects container" id="projects">
     <h2>Projects</h2>
     <div class="projects-grid">
       <div class="project">
-        <!-- MOBILE: playsinline prevents forced fullscreen on phones -->
         <video class="project-video" controls poster="ecommerce-thumbnail.png" muted autoplay playsinline loop>
           <source src="projectVideo/eccommerce.mp4" type="video/mp4">
           Your browser does not support the video tag.
