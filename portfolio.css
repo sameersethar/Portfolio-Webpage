@@ -341,7 +341,7 @@ footer {
   }
 
   .nav-links {
-    font-size: small;
+    font-size: 14px;
     display: flex;
     top: 0;
     flex-direction: row;    /* Put links on one horizontal line */
